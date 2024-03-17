@@ -28,6 +28,6 @@ target_compile_options(
 
 
 
-set(executable_target_name "xxinit-exe")
+set(executable_target_name xxinit-exe)
 
-add_subdirectory("executable")
+add_subdirectory(executable)
