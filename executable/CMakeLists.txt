@@ -1,5 +1,6 @@
 add_executable(
 	${executable_target_name}
+	src/greet.cxx
 	src/main.cxx
 )
 

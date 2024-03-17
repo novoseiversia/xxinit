@@ -1,5 +1,4 @@
 #include <cstdlib>
-#include <iostream>
 
 #include "greet.hxx"
 
@@ -7,6 +6,6 @@
 
 auto main() -> int
 {
-	std::cout << "Hello, world!\n";
+	novoseiversia::xxinit::greet("novoseiversia");
 	return EXIT_SUCCESS;
 }
