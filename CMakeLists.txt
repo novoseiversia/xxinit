@@ -5,7 +5,7 @@ project(xxinit LANGUAGES CXX)
 
 
 set(base_target_name xxinit-base)
-set(executable_target_name xxinit-exe)
+set(executable_target_name xxinit-executable)
 
 
 
