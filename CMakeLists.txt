@@ -4,6 +4,10 @@ project(xxinit LANGUAGES CXX)
 
 
 
+set(executable_target_name xxinit-exe)
+
+
+
 add_library(xxinit-base INTERFACE)
 
 target_include_directories(
@@ -27,7 +31,5 @@ target_compile_options(
 )
 
 
-
-set(executable_target_name xxinit-exe)
 
 add_subdirectory(executable)
