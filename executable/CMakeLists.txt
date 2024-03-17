@@ -6,5 +6,5 @@ add_executable(
 target_link_libraries(
 	${executable_target_name}
 	PRIVATE
-		xxinit-base
+		${base_target_name}
 )
