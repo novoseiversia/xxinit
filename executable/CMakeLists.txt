@@ -3,8 +3,24 @@ add_executable(
 	src/main.cxx
 )
 
-target_link_libraries(
+
+
+target_include_directories(
 	${executable_target_name}
 	PRIVATE
-		${base_target_name}
+		$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+		$<INSTALL_INTERFACE:include>
+)
+
+target_compile_features(
+	${executable_target_name}
+	PRIVATE
+		cxx_std_20
+)
+
+target_compile_options(
+	${executable_target_name}
+	PRIVATE
+		$<$<CXX_COMPILER_ID:MSVC>:/W4 /w14640 /permissive->
+		$<$<NOT:$<CXX_COMPILER_ID:MSVC>>:-Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wpedantic>
 )
