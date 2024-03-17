@@ -13,6 +13,12 @@ target_include_directories(
 		$<INSTALL_INTERFACE:include>
 )
 
+target_link_libraries(
+	${executable_target_name}
+	PRIVATE
+		${library_target_name}
+)
+
 target_compile_features(
 	${executable_target_name}
 	PRIVATE
