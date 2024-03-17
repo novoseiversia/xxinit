@@ -1,6 +1,6 @@
 add_executable(
 	${executable_target_name}
-	main.cxx
+	src/main.cxx
 )
 
 target_link_libraries(

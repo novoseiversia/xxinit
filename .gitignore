@@ -6,4 +6,4 @@
 
 !CMakeLists.txt
 !executable/
-!executable/*
+!executable/**
