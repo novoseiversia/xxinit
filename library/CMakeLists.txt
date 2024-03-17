@@ -7,14 +7,14 @@ add_library(
 
 target_include_directories(
 	${library_target_name}
-	PRIVATE
+	PUBLIC
 		$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
 		$<INSTALL_INTERFACE:include>
 )
 
 target_compile_features(
 	${library_target_name}
-	PRIVATE
+	PUBLIC
 		cxx_std_20
 )
 
