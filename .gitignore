@@ -7,3 +7,5 @@
 !CMakeLists.txt
 !executable/
 !executable/**
+!library/
+!library/**
